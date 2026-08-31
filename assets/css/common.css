@@ -15,11 +15,6 @@ body {
   padding: 0;
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 a {
   cursor: pointer;
 }
