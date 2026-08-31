@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* Device Object Size Responsive */
 function rem() {
-  let clientWidth = document.documentElement.clientWidth;
-  console.log(clientWidth);
+  let clientWidth = document.body.clientWidth;
   let breakPoint_pc = 1900;
   let size_pc = breakPoint_pc;
   let breakPoint_mobile = 768;
