@@ -51,6 +51,22 @@ input[type=time]:disabled::-webkit-calendar-picker-indicator, input[type=date]:d
   color: #fff;
 }
 
+.dv_pc body::-webkit-scrollbar {
+  height: 2rem;
+  width: 2rem;
+}
+.dv_pc body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.dv_pc body::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.dv_pc body::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: #a180cf;
+  border: 0.8rem solid transparent;
+}
+
 /* 폰트 */
 :root {
   font-size: 10px;

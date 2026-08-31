@@ -33,9 +33,7 @@ function rem() {
   let rem_mobile = clientWidth / size_mobile;
   if (clientWidth <= breakPoint_mobile) {
     document.querySelector(':root').style.setProperty('font-size', (rem_mobile * 10) + 'px');
-    // document.querySelector(':root').style.setProperty('font-size', '10px');
   } else {
     document.querySelector(':root').style.setProperty('font-size', (rem_pc * 10) + 'px');
-    // document.querySelector(':root').style.setProperty('font-size', '10px');
   }
 }
