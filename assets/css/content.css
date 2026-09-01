@@ -354,7 +354,6 @@
   }
 }
 .ly_page .ly_body .bl_portfolio_project > ul > li .bl_project_item .bl_item_recent > ul > li .bl_recent_item .bl_item_cont ul li .bl_cont_item .bl_item_obj {
-  background-color: #f5f5f5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -594,7 +593,6 @@
   }
 }
 .ly_page .ly_body .bl_portfolio_project > ul > li .bl_project_item .bl_item_old > ul > li .bl_old_item .bl_item_cont .bl_cont_obj {
-  background-color: #f5f5f5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
