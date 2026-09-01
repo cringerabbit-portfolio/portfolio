@@ -251,7 +251,913 @@ $color_gray4: #f5f5f5;
   }
 
   .ly_body {
+    .bl_portfolio {
+      display: flex;
+      position: relative;
 
+      @media (max-width: 768px) {
+        display: block;
+      }
+
+      &_company {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        padding: 10.6rem 3.1rem 6.8rem 8rem;
+        position: relative;
+        width: 52rem;
+
+        @media (max-width: 768px) {
+          padding: 10.6rem 3rem 1.8rem 3rem;
+          width: 100%;
+        }
+
+        .bl_company {
+          &_dot {
+            height: 3rem;
+            position: absolute;
+            right: 3.1rem;
+            top: 0;
+            width: 3rem;
+
+            .bl_dot {
+              &_obj {
+                border: 0.3rem solid $color_secondary;
+                border-radius: 50%;
+                box-sizing: border-box;
+                height: 100%;
+              }
+            }
+          }
+
+          &_position {
+            ul {
+              margin: -0.5rem 0 -0.6rem 0;
+
+              li {
+                padding: 0.5rem 0 0.6rem 0;
+
+                .bl_position {
+                  &_item {
+                    .bl_item {
+                      &_obj {
+                        color: $color_secondary2;
+                        font-size: 1.4rem;
+                        line-height: 1.3;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &_ability {
+            padding-top: 1.5rem;
+
+            ul {
+              display: flex;
+              margin: 0 -0.5rem;
+
+              li {
+                flex: 0 0 auto;
+                padding: 0 0.5rem;
+
+                .bl_ability {
+                  &_item {
+                    height: 2rem;
+                    width: 2rem;
+
+                    .bl_item {
+                      &_obj {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 100%;
+
+                        &.mo_publishing {
+                          background-image: url('../images/body/company_publishing.png');
+                        }
+
+                        &.mo_design {
+                          background-image: url('../images/body/company_design.png');
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &_desc {
+            padding-top: 3.7rem;
+
+            .bl_desc {
+              &_obj {
+                color: $color_gray2;
+                font-size: 1.2rem;
+                line-height: 1.3;
+              }
+            }
+          }
+
+          &_name {
+            padding-top: 2.4rem;
+
+            .bl_name {
+              &_obj {
+                color: $color_secondary2;
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 1.3;
+              }
+            }
+          }
+        }
+      }
+
+      &_project {
+        flex: 1 1 auto;
+        padding: 11rem 8rem 8rem 6rem;
+
+        @media (max-width: 768px) {
+          padding: 3rem 3rem 8rem 3rem;
+        }
+
+        > ul {
+          margin: -4rem 0;
+
+          > li {
+            padding: 4rem 0;
+
+            .bl_project {
+              &_item {
+                .bl_item {
+                  &_year {
+                    margin-top: -0.4rem;
+                    padding-bottom: 3.5rem;
+
+                    .bl_year {
+                      &_obj {
+                        color: $color_primary2;
+                        font-size: 1.4rem;
+                        line-height: 1.3;
+                      }
+                    }
+                  }
+
+                  &_recent {
+                    > ul {
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin: -2rem -4rem;
+
+                      @media (max-width: 768px) {
+                        display: block;
+                        margin: -2rem 0;
+                      }
+
+                      > li {
+                        box-sizing: border-box;
+                        flex: 0 0 auto;
+                        padding: 2rem 4rem;
+                        width: calc(100% / 3);
+
+                        @media (max-width: 768px) {
+                          padding: 2rem 0;
+                          width: 100%;
+                        }
+
+                        .bl_recent {
+                          &_item {
+                            .bl_item {
+                              &_ttl {
+                                margin-top: -0.6rem;
+                                padding-bottom: 1.3rem;
+
+                                @media (max-width: 768px) {
+                                  padding-bottom: 1.4rem;
+                                }
+
+                                .bl_ttl {
+                                  &_obj {
+                                    font-size: 2rem;
+
+                                    @media (max-width: 768px) {
+                                      font-size: 1.8rem;
+                                    }
+                                  }
+                                }
+                              }
+
+                              &_cont {
+                                ul {
+                                  display: flex;
+                                  flex-wrap: wrap;
+                                  margin: -1rem;
+
+                                  li {
+                                    flex: 0 0 auto;
+                                    padding: 1rem;
+
+                                    .bl_cont {
+                                      &_item {
+                                        border-radius: 0.8rem;
+                                        overflow: clip;
+                                        position: relative;
+
+                                        @media (max-width: 768px) {
+                                          border-radius: 0.6rem;
+                                        }
+
+                                        .bl_item {
+                                          &_obj {
+                                            background-color: $color_gray4;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            height: 100%;
+                                          }
+                                        }
+
+                                        &::before {
+                                          background-color: rgba(0, 0, 0, 0.9);
+                                          content: '';
+                                          display: none;
+                                          height: 100%;
+                                          left: 0;
+                                          position: absolute;
+                                          top: 0;
+                                          width: 100%;
+                                        }
+
+                                        &::after {
+                                          background: url('../images/body/project_security.png') no-repeat center / contain;
+                                          content: '';
+                                          display: none;
+                                          height: 3rem;
+                                          left: 50%;
+                                          position: absolute;
+                                          top: 50%;
+                                          transform: translate(-50%, -50%);
+                                          width: 3rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 2.4rem;
+                                            width: 2.4rem;
+                                          }
+                                        }
+                                      }
+                                    }
+
+                                    &:first-child {
+                                      .bl_cont {
+                                        &_item {
+                                          border-radius: 1.2rem;
+
+                                          @media (max-width: 768px) {
+                                            border-radius: 1rem;
+                                          }
+
+                                          &::after {
+                                            height: 6rem;
+                                            width: 6rem;
+
+                                            @media (max-width: 768px) {
+                                              height: 4.8rem;
+                                              width: 4.8rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_pc {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          height: 8rem;
+                                          width: 14.2rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 6rem;
+                                            width: 10.7rem;
+                                          }
+                                        }
+                                      }
+
+                                      &:first-child {
+                                        flex: 1 1 100%;
+
+                                        .bl_cont {
+                                          &_item {
+                                            height: 20.3rem;
+                                            width: 100%;
+
+                                            @media (max-width: 768px) {
+                                              height: 17.7rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_tablet {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          height: 8rem;
+                                          width: 10.7rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 6rem;
+                                            width: 8rem;
+                                          }
+                                        }
+                                      }
+
+                                      &:first-child {
+                                        flex: 1 1 100%;
+
+                                        .bl_cont {
+                                          &_item {
+                                            height: 27rem;
+                                            width: 100%;
+
+                                            @media (max-width: 768px) {
+                                              height: 23.6rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_mobile {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          height: 17.3rem;
+                                          width: 8rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 13rem;
+                                            width: 6rem;
+                                          }
+                                        }
+                                      }
+
+                                      &:first-child {
+                                        flex: 1 1 auto;
+
+                                        .bl_cont {
+                                          &_item {
+                                            height: 34.7rem;
+                                            width: 100%;
+
+                                            @media (max-width: 768px) {
+                                              height: 33.6rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_kiosk {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          height: 14.2rem;
+                                          width: 8rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 10.7rem;
+                                            width: 6rem;
+                                          }
+                                        }
+                                      }
+
+                                      &:first-child {
+                                        flex: 1 1 auto;
+
+                                        .bl_cont {
+                                          &_item {
+                                            height: 28.4rem;
+                                            width: 100%;
+
+                                            @media (max-width: 768px) {
+                                              height: 27.6rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_publishing {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          border-radius: 0;
+                                          height: 4rem;
+                                          width: 10rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 3rem;
+                                            width: 7.5rem;
+                                          }
+                                        }
+                                      }
+
+                                      &:first-child {
+                                        flex: 1 1 100%;
+
+                                        .bl_cont {
+                                          &_item {
+                                            border-radius: 0;
+                                            height: 14.4rem;
+                                            width: 100%;
+
+                                            @media (max-width: 768px) {
+                                              height: 12.6rem;
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &.mo_security {
+                                  ul {
+                                    li {
+                                      .bl_cont {
+                                        &_item {
+                                          &::before {
+                                            display: block;
+                                          }
+
+                                          &::after {
+                                            display: block;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+
+                              &_ability {
+                                padding-top: 2rem;
+
+                                ul {
+                                  display: flex;
+                                  margin: 0 -0.5rem;
+
+                                  li {
+                                    flex: 0 0 auto;
+                                    padding: 0 0.5rem;
+
+                                    .bl_ability {
+                                      &_item {
+                                        height: 2rem;
+                                        width: 2rem;
+
+                                        @media (max-width: 768px) {
+                                          height: 1.6rem;
+                                          width: 1.6rem;
+                                        }
+
+                                        .bl_item {
+                                          &_obj {
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            height: 100%;
+
+                                            &.mo_publishing {
+                                              background-image: url('../images/body/project_publishing.png');
+                                            }
+
+                                            &.mo_design {
+                                              background-image: url('../images/body/project_design.png');
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &_old {
+                    > ul {
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin: -2rem -4rem;
+
+                      @media (max-width: 768px) {
+                        display: block;
+                        margin: -2rem 0;
+                      }
+
+                      > li {
+                        box-sizing: border-box;
+                        flex: 0 0 auto;
+                        padding: 2rem 4rem;
+
+                        @media (max-width: 768px) {
+                          padding: 2rem 0;
+                        }
+
+                        .bl_old {
+                          &_item {
+                            align-items: center;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .bl_item {
+                              &_cont {
+                                border-radius: 0.8rem;
+                                flex: 0 0 auto;
+                                overflow: clip;
+                                position: relative;
+
+                                @media (max-width: 768px) {
+                                  border-radius: 0.6rem;
+                                }
+
+                                .bl_cont {
+                                  &_obj {
+                                    background-color: $color_gray4;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    height: 100%;
+                                  }
+                                }
+
+                                &::before {
+                                  background-color: rgba(0, 0, 0, 0.9);
+                                  content: '';
+                                  display: none;
+                                  height: 100%;
+                                  left: 0;
+                                  position: absolute;
+                                  top: 0;
+                                  width: 100%;
+                                }
+
+                                &::after {
+                                  background: url('../images/body/project_security.png') no-repeat center / contain;
+                                  content: '';
+                                  display: none;
+                                  height: 3rem;
+                                  left: 50%;
+                                  position: absolute;
+                                  top: 50%;
+                                  transform: translate(-50%, -50%);
+                                  width: 3rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 2.4rem;
+                                    width: 2.4rem;
+                                  }
+                                }
+                              }
+
+                              &_ttl {
+                                flex: 1 1 auto;
+                                padding-left: 2rem;
+
+                                @media (max-width: 768px) {
+                                  font-size: 1.4rem;
+                                }
+                              }
+
+                              &_ability {
+                                flex: 0 0 auto;
+                                padding-left: 2rem;
+
+                                ul {
+                                  margin: -0.5rem 0;
+
+                                  li {
+                                    padding: 0.5rem 0;
+
+                                    .bl_ability {
+                                      &_item {
+                                        height: 2rem;
+                                        width: 2rem;
+
+                                        @media (max-width: 768px) {
+                                          height: 1.6rem;
+                                          width: 1.6rem;
+                                        }
+
+                                        .bl_item {
+                                          &_obj {
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: contain;
+                                            height: 100%;
+
+                                            &.mo_publishing {
+                                              background-image: url('../images/body/project_publishing.png');
+                                            }
+
+                                            &.mo_design {
+                                              background-image: url('../images/body/project_design.png');
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_pc {
+                          width: calc(100% / 3);
+
+                          @media (max-width: 768px) {
+                            width: 100%;
+                          }
+
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  height: 8rem;
+                                  width: 14.2rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 6rem;
+                                    width: 10.7rem;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_tablet {
+                          width: calc(100% / 3);
+
+                          @media (max-width: 768px) {
+                            width: 100%;
+                          }
+
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  height: 8rem;
+                                  width: 10.7rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 6rem;
+                                    width: 8rem;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_mobile {
+                          width: calc(100% / 4);
+
+                          @media (max-width: 768px) {
+                            width: 22rem;
+                          }
+
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  height: 17.3rem;
+                                  width: 8rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 13rem;
+                                    width: 6rem;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_kiosk {
+                          width: calc(100% / 4);
+
+                          @media (max-width: 768px) {
+                            width: 22rem;
+                          }
+
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  height: 14.2rem;
+                                  width: 8rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 10.7rem;
+                                    width: 6rem;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_publishing {
+                          width: calc(100% / 2);
+
+                          @media (max-width: 768px) {
+                            width: 100%;
+                          }
+
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  border-radius: 0;
+                                  height: 4rem;
+                                  width: 10rem;
+
+                                  @media (max-width: 768px) {
+                                    height: 3rem;
+                                    order: 1;
+                                    width: 7.5rem;
+                                  }
+                                }
+
+                                &_ttl {
+                                  @media (max-width: 768px) {
+                                    flex: 1 1 100%;
+                                    margin-bottom: -0.5rem;
+                                    order: 3;
+                                    padding: 1.6rem 0 0 0;
+                                  }
+                                }
+
+                                &_ability {
+                                  flex: 0 0 auto;
+
+                                  @media (max-width: 768px) {
+                                    display: flex;
+                                    flex: 1 1 auto;
+                                    justify-content: end;
+                                    order: 2;
+                                  }
+
+                                  ul {
+                                    display: flex;
+                                    margin: 0 -0.5rem;
+
+                                    @media (max-width: 768px) {
+                                      flex: 0 0 auto;
+                                    }
+
+                                    li {
+                                      flex: 0 0 auto;
+                                      padding: 0 0.5rem;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+
+                        &.mo_security {
+                          .bl_old {
+                            &_item {
+                              .bl_item {
+                                &_cont {
+                                  &::before {
+                                    display: block;
+                                  }
+
+                                  &::after {
+                                    display: block;
+                                  }
+                                }
+
+                                &_ttl {
+                                  flex: 1 1 auto;
+                                  padding-left: 2rem;
+                                }
+
+                                &_ability {
+                                  flex: 0 0 auto;
+                                  padding-left: 2rem;
+
+                                  ul {
+                                    margin: -0.5rem 0;
+
+                                    li {
+                                      padding: 0.5rem 0;
+
+                                      .bl_ability {
+                                        &_item {
+                                          height: 2rem;
+                                          width: 2rem;
+
+                                          @media (max-width: 768px) {
+                                            height: 1.6rem;
+                                            width: 1.6rem;
+                                          }
+
+                                          .bl_item {
+                                            &_obj {
+                                              background-position: center;
+                                              background-repeat: no-repeat;
+                                              background-size: contain;
+                                              height: 100%;
+
+                                              &.mo_publishing {
+                                                background-image: url('../images/body/project_publishing.png');
+                                              }
+
+                                              &.mo_design {
+                                                background-image: url('../images/body/project_design.png');
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &_more {
+                    height: 1rem;
+                    padding-top: 4rem;
+                    width: 4rem;
+
+                    .bl_more {
+                      &_obj {
+                        background: url('../images/body/project_more.png') no-repeat center / contain;
+                        height: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &::before {
+        background-color: $color_secondary;
+        content: '';
+        display: block;
+        height: 100%;
+        left: 51.9rem;
+        position: absolute;
+        top: 0;
+        width: 0.1rem;
+
+        @media (max-width: 768px) {
+          left: auto;
+          right: 0.9rem;
+        }
+      }
+    }
   }
 
   .ly_footer {
