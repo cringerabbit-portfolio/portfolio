@@ -145,6 +145,16 @@
   object-fit: contain;
   width: 100%;
 }
+.ly_page .ly_header .bl_visual_flow::after {
+  background: url("../images/header/visual_bg.png") no-repeat center/contain;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .ly_page .ly_header .bl_visual_line {
   bottom: 0;
   height: 41.5rem;

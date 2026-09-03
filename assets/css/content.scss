@@ -205,6 +205,17 @@ $color_gray4: #f5f5f5;
           object-fit: contain;
           width: 100%;
         }
+
+        &::after {
+          background: url('../images/header/visual_bg.png') no-repeat center / contain;
+          content: '';
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
       }
 
       &_line {
