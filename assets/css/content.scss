@@ -30,8 +30,8 @@ $color_gray4: #f5f5f5;
       z-index: 10;
 
       @media (max-width: 768px) {
-        height: 27.5rem;
-        width: 27.5rem;
+        height: 23.8rem;
+        width: 23.8rem;
       }
 
       &_flow {
@@ -140,10 +140,10 @@ $color_gray4: #f5f5f5;
         }
 
         @media (max-width: 768px) {
-          height: 54.4rem;
-          left: -16.7rem;
-          top: 5.4rem;
-          width: 54.4rem;
+          height: 58.8rem;
+          left: -18.9rem;
+          top: 2.7rem;
+          width: 58.8rem;
         }
 
         .bl_wave {
@@ -154,26 +154,6 @@ $color_gray4: #f5f5f5;
             @media (max-width: 768px) {
               background-image: url('../images/header/side_wave_mo.png');
             }
-          }
-        }
-      }
-
-      &_bi {
-        height: 1.7rem;
-        left: 8rem;
-        position: absolute;
-        top: 8rem;
-        width: 16.8rem;
-
-        @media (max-width: 768px) {
-          left: 3rem;
-          top: 4rem;
-        }
-
-        .bl_bi {
-          &_obj {
-            background: url('../images/header/side_bi.png') no-repeat center / contain;
-            height: 100%;
           }
         }
       }
@@ -256,6 +236,29 @@ $color_gray4: #f5f5f5;
               background-image: url('../images/header/visual_cont_mo.png');
             }
           }
+        }
+      }
+    }
+
+    .bl_bi {
+      height: 1.7rem;
+      left: 8rem;
+      position: absolute;
+      top: 8rem;
+      width: 16.8rem;
+      z-index: 30;
+
+      @media (max-width: 768px) {
+        left: 3rem;
+        top: 4rem;
+      }
+
+      &_obj {
+        background: url('../images/header/side_bi.png') no-repeat center / contain;
+        height: 100%;
+
+        @media (max-width: 768px) {
+          background-image: url('../images/header/side_bi_mo.png');
         }
       }
     }
